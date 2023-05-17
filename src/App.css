@@ -1,38 +1,107 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
 }
 
-.App-link {
-  color: #61dafb;
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+.verifycode {
+  height: 40px;
+  background-color: rgb(0, 194, 130);
+  /*margin-left: 250px;*/
+  cursor: pointer;
+  align-items: center;
+  /* border-radius: 8px; */
+  text-align: center;
+  font-size: 15px;
+  float: left;
+}
+
+.otp {
+  margin-right: 250px;
+  cursor: pointer;
+  align-items: center;
+  /* border-radius: 8px; */
+  text-align: center;
+  font-size: 15px;
+}
+.comtainer {
+  align-items: baseline;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+.home-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+a.home {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.home:hover {
+  transform: translateY(-2px);
+}
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
+
+.register-tab{
+display: flex;
+flex-direction: column;
 }

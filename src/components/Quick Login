@@ -1,0 +1,29 @@
+// import React, { useState } from "react";
+// export const QuiclLogin = (props) => {
+//   const [phonenumber] = useState("");
+ 
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log(phonenumber);
+//   };
+//   return (
+//     <div className="auth-form-container">
+//       <form className="register-form" onSubmit={handleSubmit}>
+//         <input placeholder="+91" />
+
+//         <div className="comtainer">
+//         <input type="button" value={"Get Verification code"} style={{background:"green",color:"white"}}/>
+
+//           <input class="" placeholder="otp" style={{float:"left"}}/>
+          
+//         </div>
+
+//         <button type="submit">QuickLogin</button>
+//       </form>
+//       <button className="link-btn" onClick={() => props.onFormSwitch("QuickLogin")}>
+//         Registered account? Register.
+//       </button>
+//     </div>
+//   );
+// };
